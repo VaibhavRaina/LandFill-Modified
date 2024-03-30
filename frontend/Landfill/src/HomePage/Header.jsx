@@ -7,13 +7,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
+
+
 function Header(props) {
     const { sections, title } = props;
 
     return (
         <React.Fragment>
             <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Button size="small">Subscribe</Button>
+                <Button size="small">Home</Button>
                 <Typography
                     component="h2"
                     variant="h5"
@@ -27,9 +29,11 @@ function Header(props) {
                 <IconButton>
                     <SearchIcon />
                 </IconButton>
-                <Button variant="outlined" size="small">
-                    Sign up
-                </Button>
+                <Link href="/signup" underline="none">
+                    <Button variant="outlined" size="small">
+                        Sign up
+                    </Button>
+                </Link>
             </Toolbar>
             <Toolbar
                 component="nav"

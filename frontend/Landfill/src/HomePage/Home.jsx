@@ -14,9 +14,12 @@ import Sidebar from './Sidebar';
 import Footer from './Footer';
 
 const sections = [
-    { title: 'Technology', url: '#' },
-    { title: 'Design', url: '#' },
-    { title: 'Culture', url: '#' },
+    {
+        title: `Post Land`,
+        url: '#'
+    },
+    { title: 'Lease', url: '#' },
+    { title: '', url: '#' },
     { title: 'Business', url: '#' },
     { title: 'Politics', url: '#' },
     { title: 'Opinion', url: '#' },
@@ -59,7 +62,7 @@ const posts = ["A", "B", "C"];
 const sidebar = {
     title: 'About',
     description:
-        'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
+        "Welcome to LandFill!  Jump right in and explore our many vacant used and unused lands. Feel free to share some of your own and comment on others!",
     archives: [
         { title: 'March 2020', url: '#' },
         { title: 'February 2020', url: '#' },
@@ -88,7 +91,7 @@ export default function Home() {
         <ThemeProvider theme={defaultTheme}>
             <CssBaseline />
             <Container maxWidth="lg">
-                <Header title="Blog" sections={sections} />
+                <Header title="LandFill" sections={sections} />
                 <main>
                     <MainFeaturedPost post={mainFeaturedPost} />
                     <Grid container spacing={4}>
