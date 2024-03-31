@@ -1,38 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TypewriterEffect } from "./typewriter";
+import SearchBar from "./SearchBar";
 
 function Landing() {
-  const words = [
-    {
-      text: "Need ",
-    },
-    {
-      text: "Land",
-    },
-    {
-      text: "for",
-    },
-    {
-      text: "events?",
-    },
-    {
-      text: "Know more",
-      className: "text-green-600 dark:text-green-500",
-    },
-  ];
   return (
-    <div className="">
-      <img
-        src="/landing2.jpg"
-        alt="home-image"
-        width={window.innerWidth}
-        height={window.innerHeight / 2}
-        style={{ height: `${window.innerHeight}px` }}
-        className="blur-sm object-cover"
-      />
-      <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 font-semibold text-black">
-        <TypewriterEffect words={words} />
+    <div className="bg-gray-100 w-screen h-screen flex">
+      <div className="flex flex-col font-bold text-gray-700 absolute top-[100px] p-6">
+        <div className="text-7xl">
+          Get Land Instantly
+          <br /> to Organize your
+          <br />
+          events!
+        </div>
+        <div className=" font-semibold text-2xl pt-4">
+          Whether you want to rent land for a wedding, party,
+          <br /> or you need land for a short-term event,
+          <br />
+          we've got you covered.
+        </div>
+        <div className="pt-10">
+          <SearchBar />
+        </div>
+      </div>
+      <div>
+        <img
+          src="/map.svg"
+          alt="hotel"
+          height={900}
+          width={900}
+          className="absolute right-[70px] top-[-50px] "
+        />
       </div>
     </div>
   );
