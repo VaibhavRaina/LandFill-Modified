@@ -19,6 +19,7 @@ const dbUrl =
 const userRoutes = require(`./routes/users`);
 const landRoutes = require("./routes/lands");
 const reviewRoutes = require("./routes/reviews");
+const cors = require("cors");
 
 mongoose.connect(dbUrl, {});
 
@@ -29,6 +30,8 @@ db.once("open", () => {
 });
 
 const app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
