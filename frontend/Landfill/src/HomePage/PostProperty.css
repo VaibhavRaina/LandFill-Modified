@@ -1,0 +1,159 @@
+.post-property {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #0000004c;
+  border-radius: 6px;
+  height: 673px;
+  overflow: hidden;
+  position: relative;
+  width: 270px;
+}
+
+.post-property .overlap-group {
+  background-color: #fff7e1;
+  border-radius: 6px;
+  height: 154px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 250px;
+}
+
+.post-property .make-your-land {
+  color: transparent;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 6px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: 236px;
+}
+
+.post-property .text-wrapper {
+  color: #000000;
+  letter-spacing: 0.06px;
+}
+
+.post-property .span {
+  color: #229914;
+  font-weight: 700;
+  letter-spacing: 0.06px;
+}
+
+.post-property .div {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 16px;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 202px;
+  width: 236px;
+}
+
+.post-property .post-your-land {
+  align-items: center;
+  background-color: #ffc72c;
+  border: 1px solid;
+  border-color: #0000004c;
+  border-radius: 20px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 31px;
+  overflow: hidden;
+  padding: 9px 36px;
+  position: absolute;
+  top: 286px;
+
+}
+
+.post-property .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+
+  /* Add transition for smooth color change */
+}
+
+.post-property .post-your-land:hover,
+.post-property .post-your-land:active {
+  background-color: #eeee13;
+  transition: 0.3s;
+  /* Change color to light yellow on hover or click */
+}
+
+
+.post-property .why-landfill-holder {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  left: 29px;
+  position: absolute;
+  top: 395px;
+  width: 215px;
+}
+
+.post-property .text-wrapper-3 {
+  align-self: stretch;
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+}
+
+.post-property .why-land-fill-points {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.post-property .point {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 7px;
+  position: relative;
+}
+
+.post-property .green-tick {
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.post-property .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: 193px;
+}

@@ -81,3 +81,34 @@ module.exports.deleteLand = async function (req, res) {
     req.flash(`success`, `Successfully deleted a Land `);
     res.redirect(`/lands`)
 }
+
+module.exports.likeLand = async function (req, res, next) {
+    const { id } = req.params;
+    const land = await Land.findById(id);
+    if (!land) {
+        return res.status(404).json({ message: 'Land not found' });
+    }
+    // Check if the user has already liked the land
+    if (land.likes.includes(req.user._id)) {
+        return res.status(400).json({ message: 'You have already liked this land' });
+    }
+    // Add user's ID to the likes array
+    land.likes.push(req.user._id);
+    await land.save();
+    res.status(200).json({ message: 'Land liked successfully' });
+}
+module.exports.unlikeLand = async function (req, res) {
+    const { id } = req.params;
+    const land = await Land.findById(id);
+    if (!land) {
+        return res.status(404).json({ message: 'Land not found' });
+    }
+    // Check if the user has liked the land
+    if (!land.likes.includes(req.user._id)) {
+        return res.status(400).json({ message: 'You have not liked this land' });
+    }
+    // Remove user's ID from the likes array
+    land.likes = land.likes.filter(userId => userId !== req.user._id);
+    await land.save();
+    res.status(200).json({ message: 'Land unliked successfully' });
+}

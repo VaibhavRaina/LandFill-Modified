@@ -27,7 +27,10 @@ module.exports.landSchema = Joi.object({
     land: Joi.object({
         title: Joi.string().required().escapeHTML(),
         price: Joi.number().required().min(0),
+        area: Joi.number().required().min(0),
         location: Joi.string().required().escapeHTML(),
+        highlights: Joi.array().required(),
+        landType: Joi.string().required(),
         description: Joi.string().required().escapeHTML()
     }).required(),
     deleteImages: Joi.array()

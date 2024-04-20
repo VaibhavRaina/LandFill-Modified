@@ -6,6 +6,9 @@ const { descriptors, places } = require(`./seedHelpers`)
 mongoose.connect('mongodb://localhost:27017/Lands', {
 });
 
+// mongoose.connect('mongodb+srv://landfillapp:maihumaderchud@cluster0.wracgg2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+// });
+
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Connection error:'));
 db.once('open', function () {
@@ -18,7 +21,7 @@ const sample = function (array) {
 
 const seedDb = async () => {
     await Land.deleteMany({});
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 10; i++) {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 100) + 1;
         const camp = new Land({
@@ -26,8 +29,9 @@ const seedDb = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             // image: 'https://res.cloudinary.com/douqbebwk/image/upload/v1600060601/YelpCamp/ahfnenvca4tha00h2ubt.png',
 
-            description: `An amazing spot to enjoy your vacation`,
+            description: `Rent it out`,
             author: '657dd978950d54a397c1582b',
+            area: 1020,
             price: price,
             geometry: {
                 type: "Point",
@@ -36,6 +40,9 @@ const seedDb = async () => {
                     cities[random1000].latitude,
                 ]
             },
+            likes: '657dd978950d54a397c1582b',
+            highlights: ["East Facing", "Wall Boundary"],
+            landType: "Square Shaped",
             images: [
                 {
                     url: 'https://res.cloudinary.com/dtemmbo4i/image/upload/v1707425133/Yelpcamp/fknawl8hrkybvajsg7qz.jpg',

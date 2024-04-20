@@ -15,12 +15,20 @@ ImageSchema.virtual(`thumbnail`).get(function () {
 })
 
 
+
 const LandSchema = new Schema({
     title: String,
     price: Number,
+    highlights: [String],
+    area: Number,
     description: String,
+    landType: String,
     images: [ImageSchema],
     location: String,
+    likes: [{
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }],
     author: {
         type: Schema.Types.ObjectId,
         ref: `User`

@@ -1,0 +1,194 @@
+.introduction-section {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1152px;
+}
+
+.introduction-section .frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.introduction-section .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+
+.introduction-section .frame-3 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 6px;
+  justify-content: center;
+  position: relative;
+}
+
+.introduction-section .frame-4 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 3px;
+  position: relative;
+}
+
+.introduction-section .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.introduction-section .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 33px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.introduction-section .text-wrapper-4 {
+  color: #00000066;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.introduction-section .text-wrapper-5 {
+  color: #1c7ac999;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.introduction-section .line {
+  height: 83px;
+  position: relative;
+  width: 1px;
+}
+
+.introduction-section .frame-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.introduction-section .p {
+  color: #00000066;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.introduction-section .text-wrapper-6 {
+  color: #00000066;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.introduction-section .frame-6 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+}
+
+.contact,
+.shortlist {
+  width: 162px;
+  height: 35px;
+  padding: 8px;
+  gap: 0px;
+  line-height: 2px;
+  opacity: 1;
+  /* Initial opacity */
+  text-align: center;
+}
+
+.contact {
+  background-color: #0076D6;
+  color: aliceblue;
+  text-indent: 2.5px;
+}
+
+.shortlist {
+  background: #FFFFFF;
+  border: 1px solid #0076D6;
+  color: #0076D6;
+  position: relative;
+  /* Needed for pseudo-element */
+  overflow: hidden;
+  /* Hide overflow for pseudo-element */
+}
+
+/* Hover effect */
+.contact:hover {
+  opacity: 0.8;
+  /* Decrease opacity on hover */
+}
+
+.shortlist::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  /* Initially hidden */
+  height: 100%;
+  background: linear-gradient(to right, #0076D6 100%, #0076D6 100%, transparent 100%);
+  transition: width 0.3s ease;
+  opacity: 0.1;
+
+  /* Smooth transition */
+}
+
+.shortlist:hover::before {
+  width: 100%;
+  /* Expand width on hover */
+}

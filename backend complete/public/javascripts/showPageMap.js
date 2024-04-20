@@ -20,7 +20,6 @@
 // 	zoom: 9, // starting zoom
 // });
 
-mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
 	container: 'cluster-map',
 	style: 'mapbox://styles/mapbox/streets-v12',  // stylesheet location

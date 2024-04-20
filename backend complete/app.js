@@ -14,8 +14,7 @@ const MongoStore = require('connect-mongo');
 const bodyParser = require('body-parser')
 // const dbUrl=process.env.DB_URL ;
 const dbUrl = 'mongodb://localhost:27017/Lands';
-
-
+// const dbUrl = 'mongodb+srv://landfillapp:maihumaderchud@cluster0.wracgg2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const userRoutes = require(`./routes/users`);
 const landRoutes = require('./routes/lands');
 const reviewRoutes = require('./routes/reviews');

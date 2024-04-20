@@ -28,4 +28,7 @@ router.route('/:id')
 
 router.get('/:id/edit', isLoggedIn, isAuthor, catchAsync(land.renderEditForm));
 
+router.post('/:id/like', isLoggedIn, isAuthor, validateLand, catchAsync(land.likeLand));
+router.post('/:id/unlike', isLoggedIn, isAuthor, validateLand, catchAsync(land.unlikeLand));
+
 module.exports = router;
