@@ -1,0 +1,115 @@
+.about-property {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 24px 104px;
+  position: relative;
+  width: 1440px;
+}
+
+.about-the-property {
+  color: #000000cc;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -137px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.text-wrapper {
+  color: #000000cc;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+  left: 1.5rem;
+  top: 7rem;
+}
+
+.line2 {
+  position: relative;
+
+  /* Extend the line to the whole container */
+  height: 1px;
+  background-color: black;
+  left: 1.5rem;
+  top: 8rem;
+}
+
+.line {
+
+  position: relative;
+
+  /* Extend the line to the whole container */
+  height: 1px;
+  background-color: black;
+  /* Adjust the color as needed */
+}
+
+.about-property .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 39px;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.about-property .text-wrapper-2 {
+  color: #000000cc;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.about-property .address {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 14px;
+  position: relative;
+}
+
+.about-property .text-wrapper-3 {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.about-property .p {
+  color: #000000cc;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.about-property .read-more-instance {
+  flex: 0 0 auto !important;
+}

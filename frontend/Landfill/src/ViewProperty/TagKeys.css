@@ -1,0 +1,52 @@
+.tag-keys {
+  align-items: center;
+  background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  height: 99px;
+  justify-content: flex-end;
+  position: relative;
+  left: 50%;
+  transform: translateX(-62%);
+}
+
+.tag-keys .frame {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 100px;
+  position: relative;
+  width: 1152px;
+
+}
+
+.tag-keys .line {
+
+
+  /* Extend the line to the whole container */
+  height: 1px;
+  background-color: black;
+  /* Adjust the color as needed */
+}
+
+
+.tag-keys .buttons-2 {
+  flex: 0 0 auto !important;
+}
+
+.tag-keys .line {
+  height: 1px;
+  margin-bottom: -1px;
+  object-fit: cover;
+  position: absolute;
+  width: 1440px;
+  left: 0rem;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid black;
+  /* Adjust the color and style as needed */
+  width: 100%;
+  margin: 0;
+}

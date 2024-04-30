@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../Utils/Header'
 import Container from '@mui/material/Container';
 import dummyLand from '../dummyLand';
-import './Home.css'
+import './HomePage.css'
 import PostProperty from './PostProperty';
 import LandList from './LandList';
 
@@ -33,6 +33,7 @@ export default function HomePage() {
 
 
     return (
+
         <Container disableGutters>
             <Header mode={mode} toggleColorMode={toggleColorMode} />
             <div
@@ -52,9 +53,11 @@ export default function HomePage() {
                     src="/featuredImage.jpg" // Adjust the path as necessary
                     alt="Featured Image"
                     style={{
-                        width: '100%', // Adjust image width as needed
-                        height: '100%', // Maintain aspect ratio
-                        display: 'block', // Ensure image takes up full width
+                        position: "relative",
+                        margin: "auto",
+                        width: "100%",
+                        height: "40rem"
+
                     }}
 
                 />
@@ -88,11 +91,15 @@ export default function HomePage() {
                 </div>
 
 
-                <div className='land-list'> <LandList item={filteredLand} /></div>
+                <Container className="container">
+                    <div className='land-list'> <LandList item={filteredLand} /></div>
+                </Container>
+
                 <div className='banner'><PostProperty /></div>
             </div>
 
 
         </Container>
+
     );
 }

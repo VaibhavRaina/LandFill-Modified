@@ -5,6 +5,13 @@ import Container from '@mui/material/Container';
 import { useState } from "react";
 import IntroductionSection from "./IntroductionSection";
 import "./ViewProperty.css"
+import TagKeys from "./TagKeys";
+import OverviewSection from "./OverviewSection";
+import PlacesNearby from "./PlacesNearby";
+import AboutProperty from "./AboutProperty";
+import OwnerDetails from "./OwnerDetails";
+
+
 
 export default function ViewProperty() {
     const pid = useParams().pid;
@@ -16,11 +23,18 @@ export default function ViewProperty() {
     };
 
     return (
-        <Container disableGutters>
-            <Header mode={mode} toggleColorMode={toggleColorMode} />
-            <div className="content">
-                <IntroductionSection items={loadedProperty} />
-            </div>
-        </Container>
+        <div className="body">
+            <Container disableGutters>
+                <Header mode={mode} toggleColorMode={toggleColorMode} />
+                <div className="content">
+                    <IntroductionSection items={loadedProperty} />
+                </div>
+                <div className="TagKeys"> <TagKeys /></div>
+                <div className="OverviewSection"><OverviewSection items={loadedProperty} /></div>
+                <div className="PlacesNearby"><PlacesNearby /></div>
+                <div className="AboutProperty"><AboutProperty items={loadedProperty} /></div>
+                <div className="OwnerDetails"><OwnerDetails /> </div>
+            </Container>
+        </div>
     );
 }

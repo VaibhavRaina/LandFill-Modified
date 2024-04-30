@@ -23,8 +23,20 @@ const LandList = (props) => {
                         description={land.description}
                         landType={land.landType}
                         location={land.location}
+                        country={land.country}
+                        state={land.state}
+                        village={land.village}
+                        street={land.street}
+                        landmark={land.landmark}
+                        city={land.city}
+                        pincode={land.pincode}
                         images={land.images}
                         author={land.author}
+                        wall={land.wall}
+                        possession={land.possession}
+                        gates={land.gates}
+                        length={land.length}
+                        breadth={land.breadth}
                     />
                 </ul>
             )}

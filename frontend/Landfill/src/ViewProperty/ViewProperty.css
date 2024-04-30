@@ -1,4 +1,81 @@
 .content {
-    margin-top: 116px;
-    margin-left: 144px;
+    position: relative;
+    top: 40rem;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+
+
+    /* Center the content horizontally */
+}
+
+.TagKeys {
+    position: relative;
+    top: 41rem;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+}
+
+.OverviewSection {
+    position: relative;
+    top: 39rem;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+}
+
+.PlacesNearby {
+    position: relative;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+    top: 52rem;
+    left: -12rem;
+}
+
+.AboutProperty {
+    position: relative;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+    top: 53rem;
+    left: -9rem;
+}
+
+.OwnerDetails {
+    position: relative;
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+    top: 63rem;
+}
+
+
+
+.body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensure the page takes up the full viewport height */
+    width: 100%;
+    /* Ensure content takes up full width */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+    margin: auto;
+    /* Center the content horizontally */
 }

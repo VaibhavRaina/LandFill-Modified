@@ -27,11 +27,25 @@ module.exports.landSchema = Joi.object({
     land: Joi.object({
         title: Joi.string().required().escapeHTML(),
         price: Joi.number().required().min(0),
+        length: Joi.number().required().min(0).max(10000),
+        breadth: Joi.number().required().min(0).max(10000),
         area: Joi.number().required().min(0),
-        location: Joi.string().required().escapeHTML(),
+
+        country: Joi.string().required().escapeHTML().min(1).max(10),
+        state: Joi.string().required().escapeHTML().min(1).max(10),
+        plot: Joi.string().required().escapeHTML().min(1).max(10),
+        village: Joi.string().escapeHTML().min(1).max(20),
+        street: Joi.string().escapeHTML().min(1).max(20),
+        landmark: Joi.string().escapeHTML().min(1).max(15),
+        city: Joi.string().required().escapeHTML().min(1).max(10),
+        pincode: Joi.number().required().escapeHTML().min(1).max(6),
+
         highlights: Joi.array().required(),
         landType: Joi.string().required(),
-        description: Joi.string().required().escapeHTML()
+        description: Joi.string().required().escapeHTML(),
+        wall: Joi.string().escapeHTML(),
+        gates: Joi.number().escapeHTML(),
+        possession: Joi.string().escapeHTML(),
     }).required(),
     deleteImages: Joi.array()
 });

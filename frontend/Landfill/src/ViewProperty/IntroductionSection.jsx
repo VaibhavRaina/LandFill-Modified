@@ -1,6 +1,6 @@
 import React from "react";
 import "./IntroductionSection.css";
-
+import { useState } from "react";
 export const IntroductionSection = (props) => {
   return (
     <div className="introduction-section">
@@ -15,10 +15,11 @@ export const IntroductionSection = (props) => {
           </div>
           <div className="text-wrapper-5">Negotiable for longer bookings</div>
         </div>
-        <img className="line" alt="Line" src="/img/line-9.svg" />
+        <img className="line" alt="Line" src="/line-9.svg" />
         <div className="frame-5">
           <p className="p">Available for functions, weddings, parties, parking and others</p>
-          <p className="text-wrapper-6">{props.items.location}</p>
+          <p style={{ marginBottom: "0px" }} className="text-wrapper-6">{props.items.plot} {props.items.street} {props.items.village} </p>
+          <p className="text-wrapper-6">{props.items.city} {props.items.landmark} {props.items.state} {props.items.pincode} {props.items.country}</p>
 
         </div>
       </div>
@@ -26,6 +27,7 @@ export const IntroductionSection = (props) => {
         <button className="contact"><b>Contact Owner</b><sup>Free</sup></button>
         <button className="shortlist">Shortlist</button>
       </div>
+
     </div>
   );
 };

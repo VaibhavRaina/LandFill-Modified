@@ -1,0 +1,251 @@
+.overview-section {
+  height: 419px;
+  position: relative;
+  width: 1440px;
+}
+
+.overview-section .photo-frame {
+  height: 314px !important;
+  left: 143px !important;
+  position: absolute !important;
+  top: 52px !important;
+  width: 393px !important;
+}
+
+.overview-section .details-card-instance {
+  left: 552px !important;
+  position: absolute !important;
+  top: 57px !important;
+}
+
+.overview-section .design-component-instance-node {
+  left: 552px !important;
+  position: absolute !important;
+  top: 183px !important;
+}
+
+.overview-section .details-card-2 {
+  left: 928px !important;
+  position: absolute !important;
+  top: 183px !important;
+}
+
+.overview-section .details-card-holder-wrapper1 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 22rem;
+  top: 5rem;
+  left: 552px;
+  padding: 1.25rem 3.438rem 1rem 1.25rem;
+  gap: 0px;
+  opacity: 0px;
+  height: 11.038rem;
+
+}
+
+.overview-section .details-card-holder-wrapper2 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 22rem;
+  top: 5rem;
+  left: 58rem;
+  padding: 1.25rem 3.438rem 1rem 1.25rem;
+  gap: 0px;
+  height: 11.038rem;
+  opacity: 0px;
+}
+
+.overview-section .details-card-holder-wrapper2 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 22rem;
+  left: 58rem;
+  padding: 1.25rem 3.438rem 1rem 1.25rem;
+  gap: 0px;
+  height: 11.038rem;
+  opacity: 0px;
+
+}
+
+.overview-section .details-card-holder-wrapper3 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 22rem;
+  height: 124.93px;
+  top: 18rem;
+  left: 552px;
+  padding: 17px 122px 10px 20px;
+  gap: 0px;
+  opacity: 0px;
+
+
+}
+
+.overview-section .details-card-holder-wrapper4 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 22rem;
+  top: 18rem;
+  left: 58rem;
+  padding: 1.25rem 14.688rem 1rem 1.25rem;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.overview-section .details-card-holder-wrapper5 {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 352px;
+  height: 114px;
+  top: 28rem;
+  left: 552px;
+  padding: 20px 208.5px 16.5px 20px;
+  gap: 0px;
+  opacity: 0px;
+
+
+}
+
+.overview-section .details-card-holder-wrapper6 {
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 28rem;
+  width: 22rem;
+  left: 928px;
+  padding: 20px 235px 16px 20px;
+  gap: 0px;
+  opacity: 0px;
+  height: 114px;
+
+}
+
+
+
+.overview-section .details-card-holder-21 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  left: 20px;
+  position: relative;
+}
+
+
+
+.overview-section .details-card-holder-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  left: 20px;
+  position: relative;
+  top: 14px;
+}
+
+.overview-section .heading-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 7px;
+  position: relative;
+}
+
+.overview-section .img {
+  height: 15.62px;
+  position: relative;
+  width: 15.62px;
+}
+
+.overview-section .text-wrapper-4 {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.overview-section .flexcontainer-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 9px;
+  padding: 0px 0px 0px 22px;
+  position: relative;
+}
+
+.overview-section .flexcontainer {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.overview-section .text-i {
+  align-self: stretch;
+  color: transparent;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  position: relative;
+}
+
+.overview-section .text-wrapper-5 {
+  color: #000000cc;
+  letter-spacing: 0.03px;
+  font-size: 12px;
+}
+
+.overview-section .text-wrapper-6 {
+  color: #00000099;
+  font-size: 14px;
+  letter-spacing: 0.02px;
+  position: relative;
+}
+
+.overview-section .details-card-3 {
+  left: 552px !important;
+  position: absolute !important;
+  top: 289px !important;
+}
+
+.overview-section .details-card-4 {
+  left: 928px !important;
+  position: absolute !important;
+  top: 57px !important;
+}
+
+.convert {
+  color: #0076D6;
+  font-size: 12px;
+}
+
+.dim {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding: 9px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+
+}
+
+
+
+.image {
+
+
+  position: absolute;
+  top: 5rem;
+  width: 40rem;
+  left: -120px;
+}

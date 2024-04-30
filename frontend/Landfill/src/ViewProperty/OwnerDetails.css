@@ -1,0 +1,131 @@
+.owner-details {
+  align-items: center;
+  background-color: #e8e8e8;
+  display: inline-flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 40px 143px;
+  position: relative;
+  width: 106rem;
+  right: 15rem;
+  height: 35rem;
+}
+
+.owner-details .owner {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 29px;
+  position: relative;
+  left: -26rem;
+  top: 2rem;
+}
+
+.owner-details .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.owner-details .owner-photo-and {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 21px 27px;
+  position: relative;
+  width: 463px;
+}
+
+.owner-details .rectangle {
+  height: 238px;
+  object-fit: cover;
+  position: relative;
+  width: 197px;
+}
+
+.owner-details .name-and-ownership {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.owner-details .text-wrapper-4 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.owner-details .text-wrapper-5 {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.owner-details .no-of-properties-and {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 11px;
+  position: relative;
+}
+
+.owner-details .no-of-properties {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.owner-details .localities-north {
+  color: #00000099;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.owner-details .enqiry-instance {
+  background-color: unset !important;
+  border: unset !important;
+  border-color: unset !important;
+}
+
+.EnquiryForm {
+  position: relative;
+  top: -4.3rem;
+}

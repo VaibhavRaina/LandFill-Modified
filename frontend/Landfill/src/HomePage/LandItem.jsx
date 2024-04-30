@@ -4,7 +4,6 @@ import "./LandItem.css";
 import { useState } from "react";
 import Heart from "react-animated-heart";
 import { v4 as uuidv4 } from 'uuid';
-import { useParams } from "react-router-dom";
 
 const LandItem = (props) => {
     const carouselId = uuidv4(); // Generate a unique id for the carousel
@@ -39,7 +38,7 @@ const LandItem = (props) => {
             <div className="listing-text-frame">
                 <div className="div-2">
                     <p className="text-wrapper-2"><b>Name of the land given</b></p>
-                    <p className="p">A small by line about the land that has been listed</p>
+                    <p className="p">{props.description.slice(0, 70)}...</p>
                 </div>
                 <div className="parameters-frame">
                     <div className="div-2">
@@ -48,7 +47,7 @@ const LandItem = (props) => {
                     </div>
                     <img className="line" alt="Line" src="/line-8.svg" />
                     <div className="div-2">
-                        <div className="text-wrapper-2"><b>{props.area}sqft</b></div>
+                        <div className="text-wrapper-2"><b>{props.area} Sq.m</b></div>
                     </div>
                     <img className="line" alt="Line" src="/line-8.svg" />
                     <div className="div-2">
@@ -63,7 +62,7 @@ const LandItem = (props) => {
                         </div>
                     ))}
                 </div>
-                <p className="situated-in">{props.location}</p>
+                <p className="situated-in">{props.plot} {props.street} {props.village} {props.city} {props.state} {props.country} </p>
                 <div>
                     <Link style={{ marginRight: "15px", textDecoration: 'none' }} to={`/property/${props.id}`} className="button-frame"><b>View Property</b></Link>
                     <div style={{ display: "inline-block" }}>
@@ -77,7 +76,7 @@ const LandItem = (props) => {
                     <div className="carousel-inner">
                         {props.images.map((image, index) => (
                             <div key={uuidv4()} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                <img className="additional-image" alt={image.filename} src={image.url} />
+                                <img style={{ borderRadius: "10px" }} className="additional-image" alt={image.filename} src={image.url} />
                             </div>
                         ))}
                     </div>

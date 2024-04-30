@@ -84,6 +84,7 @@
   flex: 0 0 auto;
   gap: 18px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 .land-listing .text-wrapper-3 {

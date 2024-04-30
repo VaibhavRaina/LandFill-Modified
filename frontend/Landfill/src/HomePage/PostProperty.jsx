@@ -6,7 +6,7 @@ export const PostProperty = ({ padding }) => {
     <div className="post-property" style={{ padding }}>
       <div className="overlap-group">
         <p className="make-your-land">
-          <span className="text-wrapper">Make Your Land available for rent with us for </span>
+          <span className="text-wrapper1">Make Your Land available for rent with us for </span>
           <span className="span">Free</span>
         </p>
       </div>

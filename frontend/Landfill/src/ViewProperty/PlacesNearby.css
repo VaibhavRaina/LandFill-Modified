@@ -1,0 +1,132 @@
+.places-nearby {
+  background-color: #ffffff;
+  height: 133px;
+
+}
+
+.places-nearby .places-nearby-frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 36px;
+  left: 74px;
+  position: relative;
+  top: 1px;
+}
+
+.places-nearby .frame {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 1069px;
+}
+
+.places-nearby .div {
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #000000;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.places-nearby .img {
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.places-nearby .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+  top: 0rem;
+}
+
+.places-nearby .div-wrapper {
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #000000;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+}
+
+.places-nearby .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.places-nearby .frame-2 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+}
+
+.places-nearby .buttons {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #0076d6;
+  border-radius: 8px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 5px 6px;
+  position: relative;
+}
+
+.places-nearby .contact-text-and {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 2px;
+  justify-content: center;
+  position: relative;
+}
+
+.places-nearby .text-wrapper-3 {
+  color: #0076d6;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.places-nearby .contact-text-and-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  position: relative;
+}

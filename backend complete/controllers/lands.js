@@ -34,6 +34,17 @@ module.exports.createLand = async function (req, res) {
         res.redirect(`/lands/${land._id}`);
     }
 }
+
+module.exports.userInfo = async function (req, res) {
+    const { id } = req.params;
+    const land = Land.findById(id).populate(`author`);
+    if (!land) {
+        req.flash(`error`, `No Land Found `);
+        return res.redirect(`/lands`);
+    }
+    res.json({ land })
+
+}
 module.exports.showLand = async function (req, res) {
     const { id } = req.params;
     const land = await Land.findById(id).populate({
