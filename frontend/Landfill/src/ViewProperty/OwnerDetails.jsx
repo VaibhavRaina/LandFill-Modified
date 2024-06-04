@@ -25,7 +25,6 @@ const OwnerDetails = () => {
 
         </div>
         <div className="EnquiryForm"> <EnquiryForm /></div>
-
       </div>
 
     </>

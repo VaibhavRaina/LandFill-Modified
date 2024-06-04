@@ -38,13 +38,13 @@ module.exports.landSchema = Joi.object({
         street: Joi.string().escapeHTML().min(1).max(20),
         landmark: Joi.string().escapeHTML().min(1).max(15),
         city: Joi.string().required().escapeHTML().min(1).max(10),
-        pincode: Joi.number().required().escapeHTML().min(1).max(6),
+        pincode: Joi.number().required().min(1).max(6),
 
         highlights: Joi.array().required(),
         landType: Joi.string().required(),
         description: Joi.string().required().escapeHTML(),
         wall: Joi.string().escapeHTML(),
-        gates: Joi.number().escapeHTML(),
+        gates: Joi.number(),
         possession: Joi.string().escapeHTML(),
     }).required(),
     deleteImages: Joi.array()

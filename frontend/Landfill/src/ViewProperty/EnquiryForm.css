@@ -1,0 +1,15 @@
+.textArea {
+    position: relative;
+    left: 10rem;
+}
+
+.line3 {
+
+    position: absolute;
+    top: 34rem;
+    left: -37rem;
+    /* Extend the line to the whole container */
+    height: 1px;
+    background-color: black;
+    /* Adjust the color as needed */
+}

@@ -10,6 +10,8 @@ import OverviewSection from "./OverviewSection";
 import PlacesNearby from "./PlacesNearby";
 import AboutProperty from "./AboutProperty";
 import OwnerDetails from "./OwnerDetails";
+import SimiliarList from "./SimiliarList";
+
 
 
 
@@ -34,6 +36,8 @@ export default function ViewProperty() {
                 <div className="PlacesNearby"><PlacesNearby /></div>
                 <div className="AboutProperty"><AboutProperty items={loadedProperty} /></div>
                 <div className="OwnerDetails"><OwnerDetails /> </div>
+                <h1 className="heading">Similiar Properties</h1>
+                <div className="SimiliarList"> <SimiliarList item={dummyLand} /></div>
             </Container>
         </div>
     );
